@@ -26,6 +26,8 @@ if(Loader::includeModule("sasha.mod")) {
 				echo '</tr>';
 			}
 		echo '</table>';
+	} else if($result['error']) {
+		echo '<p>'.$result['message'].'</p>';
 	}
 	
 }
